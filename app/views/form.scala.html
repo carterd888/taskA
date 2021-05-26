@@ -3,8 +3,8 @@
 @(userForm: Form[BasicForm])(implicit messages: Messages)
 
 
-@main("Scala Play forms tutorial") {
-<h1>Scala Play forms tutorial</h1>
+@main("Vehicle") {
+<h1>Enter a vehicle name</h1>
 @helper.form(action = routes.FormController.simpleFormPost) {
 @inputText(userForm("Vehicle Name"))
 <input type="submit" value="Submit">
